@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đặt hàng-Cơm Quê Của Ngoại">
+    <title>Đặt hàng - Cơm Quê Của Ngoại</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../Home_page/home.html">
+                        <img src="../imagine/logo.png" alt="Cơm Quê Của Ngoại Logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../Home_page/home.html">Trang chủ</a></li>
+                    <li><a href="../About_page/gioi thieu.html">Giới thiệu</a></li>
+                    <li><a href="../menu_page/menu.html">Menu</a></li>
+                    <li><a href="../datban_page/datban.html">Đặt bàn</a></li>
+                    <li><a href="../contact_page/lienhe.html">Liên hệ</a></li>
+                </ul>
+                <div class="cart-icon active">
+                    <img src="../imagine/Shopping cart.png" alt="Giỏ hàng">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="page-title">Giỏ hàng</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Cart Items Table -->
+        <section class="cart-section">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số Lượng</th>
+                        <th>Số Tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="product-info">
+                            <img src="../imagine/anh_com_nieu.png" alt="Cơm niêu thố gang">
+                            <span>Cơm niêu thố gang</span>
+                        </td>
+                        <td>45.000đ</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </td>
+                        <td class="item-total">45.000đ</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="product-info">
+                            <img src="../imagine/anh_com_nieu.png" alt="Cơm niêu thố gang">
+                            <span>Cơm niêu thố gang</span>
+                        </td>
+                        <td>45.000đ</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </td>
+                        <td class="item-total">45.000đ</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="product-info">
+                            <img src="../imagine/anh_com_nieu.png" alt="Cơm niêu thố gang">
+                            <span>Cơm niêu thố gang</span>
+                        </td>
+                        <td>45.000đ</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </td>
+                        <td class="item-total">45.000đ</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="product-info">
+                            <img src="../imagine/anh_com_nieu.png" alt="Cơm niêu thố gang">
+                            <span>Cơm niêu thố gang</span>
+                        </td>
+                        <td>45.000đ</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </td>
+                        <td class="item-total">45.000đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Customer Information & Order Summary -->        
+            <div class="customer-info-container">
+                <!-- Customer Information Form -->
+                <div class="customer-form">
+                    <div class="form-group">
+                        <label for="customer-name">Tên khách hàng:</label>
+                        <input type="text" id="customer-name" name="customer-name" placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Số điện thoại:</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-address">Địa chỉ nhận hàng:</label>
+                        <input type="text" id="delivery-address" name="delivery-address" placeholder="Nhập địa chỉ nhận hàng">
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="promo-code">
+                        <input type="text" id="promo-code" placeholder="Mã khuyến mãi">
+                        <button class="apply-btn">Áp dụng</button>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tổng:</span>
+                        <span class="amount">135.000đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Giảm giá</span>
+                        <span class="amount">0đ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Tổng cộng:</span>
+                        <span class="amount">135.000đ</span>
+                    </div>
+                    <a href="../thanhtoandonhang_page/payment.html" class="order-btn">Đặt hàng</a>
+                </div>
+            </div>        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
+                    <div class="contact-info">
+                        <p class="contact-item">
+                            <img src="../imagine/Icon.png" alt="Địa chỉ">
+                            Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
+                        </p>
+                        <p class="contact-item">
+                            <img src="../imagine/Phone.png" alt="Điện thoại">
+                            Hotline: 0912 913 914
+                        </p>
+                        <p class="contact-item">
+                            <img src="../imagine/Instagram.png" alt="Instagram">
+                            comqua.cuangoai
+                        </p>
+                        <p class="contact-item">
+                            <img src="../imagine/Facebook.png" alt="Facebook">
+                            Comquecuangoai
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-map">
+                    <img src="../imagine/map.png" alt="Bản đồ vị trí">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<script src="order.js"></script>-->
+</body>
+</html>
+
