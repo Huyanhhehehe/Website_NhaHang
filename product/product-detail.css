@@ -262,21 +262,7 @@ img {
 /* ==========================================
    Header & Navigation
    ========================================== */
-.header {
-    background: var(--bg-card);
-    padding: var(--spacing-md) 0;
-    box-shadow: 0 4px 12px var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-lg);
-}
 
 .logo-placeholder img {
     height: 40px;
