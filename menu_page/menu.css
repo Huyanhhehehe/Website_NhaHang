@@ -524,8 +524,7 @@ img {
     height: 50px;
     border-radius: 50%;
     border: none;
-    background: var(--accent-gold);
-    color: var(--white);
+    background: var(--bg-card);    
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
@@ -543,7 +542,7 @@ img {
 }
 
 .page-btn.active {
-    background: var(--bg-card);
+    background: var(--accent-gold);
     color: var(--white);
     box-shadow: 0 6px 16px rgba(78, 52, 24, 0.4);
 }
