@@ -344,6 +344,13 @@ img {
     background-color: var(--white);
 }
 
+/* Dish card links styling */
+.dishes-grid > a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .see-more-button {
     display: inline-block;
     margin: 0 auto;

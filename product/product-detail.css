@@ -343,14 +343,15 @@ img {
     background-color: var(--tan);
 }
 
+
 .page-title {
     font-family: var(--font-bilbo);
     font-size: 128px;
+    font-weight: 700;
     text-align: center;
     color: var(--orange-brown);
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================
