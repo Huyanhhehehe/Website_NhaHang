@@ -1,120 +1,155 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Đặt bàn-Cơm Quê Của Ngoại">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đặt bàn-Cơm Quê Của Ngoại" />
     <title>Đặt bàn - Cơm Quê Của Ngoại</title>
-    <link rel="stylesheet" href="datban.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="datban.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header & Navigation -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="../imagine/logo.png" alt="Cơm Quê Của Ngoại Logo">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="../index.html">Trang chủ</a></li>
-                    <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="../menu_page/menu.html">Menu</a></li>
-                    <li><a href="datban.html" class="active">Đặt bàn</a></li>
-                    <li><a href="../contact_page/lienhe.html">Liên hệ</a></li>
-                </ul>
-                <div class="cart-icon">
-                    <a href="../Order_page/order.html">
-                        <img src="../imagine/shopping-cart.png" alt="Giỏ hàng">
-                    </a>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../imagine/logo.png" alt="Cơm Quê Của Ngoại Logo" />
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="../menu_page/menu.html">Menu</a></li>
+            <li><a href="datban.html" class="active">Đặt bàn</a></li>
+            <li><a href="../contact_page/lienhe.html">Liên hệ</a></li>
+          </ul>
+          <div class="cart-icon">
+            <a href="../Order_page/order.html">
+              <img src="../imagine/shopping-cart.png" alt="Giỏ hàng" />
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <h1 class="page-title">Đặt bàn</h1>
-        </div>
+      <div class="container">
+        <h1 class="page-title">Đặt bàn</h1>
+      </div>
     </section>
 
     <!-- Main Content -->
     <main>
-        <section class="reservation-section">
-
-            <div class="reservation-form-container">
-                <form id="reservationForm" class="reservation-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="date">Ngày</label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Giờ</label>
-                            <input type="time" id="time" name="time" value="19:30" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Tên</label>
-                            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Số điện thoại</label>
-                            <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="0[0-9]{9}" title="Số điện thoại phải có 10 số và bắt đầu bằng 0" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="guests">Số người</label>
-                        <input type="number" id="guests" name="guests" placeholder="1 người" min="1" value="1" required>
-                    </div>
-
-                    <a href="../thanhtoandonhang2/payment2.html" class="submit-btn">Đặt bàn</a>
-                </form>
+      <section class="reservation-section">
+        <div class="reservation-form-container">
+          <form id="reservationForm" class="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Ngày</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Giờ</label>
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  value="19:30"
+                  required
+                />
+              </div>
             </div>
-        </section>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Tên</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nhập tên của bạn"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="0123456789"
+                  pattern="0[0-9]{9}"
+                  title="Số điện thoại phải có 10 số và bắt đầu bằng 0"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="guests">Số người</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                placeholder="1 người"
+                min="1"
+                value="1"
+                required
+              />
+            </div>
+
+            <a href="../thanhtoandonhang2/payment2.html" class="submit-btn"
+              >Đặt bàn</a
+            >
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
-                    <div class="contact-info">
-                        <p class="contact-item">
-                            <img src="../imagine/Icon.png" alt="Địa chỉ">
-                            Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Phone.png" alt="Điện thoại">
-                            Hotline: 0912 913 914
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Instagram.png" alt="Instagram">
-                            comqua.cuangoai
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Facebook.png" alt="Facebook">
-                            Comquecuangoai
-                        </p>
-                    </div>
-                </div>
-                <div class="footer-map">
-                    <img src="../imagine/map.png" alt="Bản đồ vị trí">
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
+            <div class="contact-info">
+              <p class="contact-item">
+                <img src="../imagine/Icon.png" alt="Địa chỉ" />
+                Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Phone.png" alt="Điện thoại" />
+                Hotline: 0912 913 914
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Instagram.png" alt="Instagram" />
+                comqua.cuangoai
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Facebook.png" alt="Facebook" />
+                Comquecuangoai
+              </p>
             </div>
+          </div>
+          <div class="footer-map">
+            <img src="../imagine/map.png" alt="Bản đồ vị trí" />
+          </div>
         </div>
+      </div>
     </footer>
-
-    <script src="datban.js"></script>
-</body>
+  </body>
 </html>
-

@@ -1,156 +1,185 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thông tin món ăn - Cơm quê cửa ngoại">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thông tin món ăn - Cơm quê cửa ngoại" />
     <title>Thông tin món - Cơm Quê Cửa Ngoại</title>
-    <link rel="stylesheet" href="product-detail.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="product-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Bilbo&family=Carattere&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Bilbo&family=Carattere&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header & Navigation -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="../index.html">
-                        <img src="../imagine/logo.png" alt="Cơm Quê Của Ngoại Logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="../index.html">Trang chủ</a></li>
-                    <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="../menu_page/menu.html" class="active">Menu</a></li>
-                    <li><a href="../datban_page/datban.html">Đặt bàn</a></li>
-                    <li><a href="../contact_page/lienhe.html">Liên hệ</a></li>
-                </ul>
-                <div class="cart-icon">
-                    <a href="../Order_page/order.html">
-                        <img src="../imagine/shopping-cart.png" alt="Giỏ hàng">
-                    </a>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../imagine/logo.png" alt="Cơm Quê Của Ngoại Logo" />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="../menu_page/menu.html" class="active">Menu</a></li>
+            <li><a href="../datban_page/datban.html">Đặt bàn</a></li>
+            <li><a href="../contact_page/lienhe.html">Liên hệ</a></li>
+          </ul>
+          <div class="cart-icon">
+            <a href="../Order_page/order.html">
+              <img src="../imagine/shopping-cart.png" alt="Giỏ hàng" />
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <h1 class="page-title">Thông tin món</h1>
-        </div>
+      <div class="container">
+        <h1 class="page-title">Thông tin món</h1>
+      </div>
     </section>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-
-            <!-- Product Detail Section -->
-            <div class="product-detail">
-                <!-- Product Image -->
-                <div class="product-image-wrapper">
-                    <div class="product-image-frame">
-                        <img src="../imagine/thit_luoc.png" alt="Thịt luộc cà pháo mắm tôm" class="product-image">
-                    </div>
-                </div>
-
-                <!-- Product Info -->
-                <div class="product-info">
-                    <h2 class="product-name">Thịt luộc cà pháo mắm tôm</h2>
-                    <p class="product-price">Giá: <span class="price-amount">50.000đ</span></p>
-
-                    <p class="product-description">
-                        Thịt luộc mềm ngọt, chấm mắm tôm đậm đà, ăn kèm cà pháo giòn rum - ngon tới mức muốn gọi thêm
-                        ngay
-                    </p>
-
-                    <!-- Quantity Selector -->
-                    <div class="quantity-section">
-                        <label class="quantity-label">Số lượng:</label>
-                        <div class="quantity-control">
-                            <button class="qty-btn minus" onclick="decreaseQty()">−</button>
-                            <input type="number" class="qty-input" value="1" min="1" id="quantity">
-                            <button class="qty-btn plus" onclick="increaseQty()">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Add to Cart Button -->
-                    <input type="checkbox" id="cart-dialog" class="dialog-toggle">
-                    <label for="cart-dialog" class="add-to-cart-btn">Thêm vào giỏ hàng</label>
-
-                    <!-- Success Dialog -->
-                    <div class="dialog-overlay">
-                        <div class="dialog-box">
-                            <div class="dialog-icon">
-                                <svg viewBox="0 0 52 52" class="checkmark">
-                                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
-                                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                                </svg>
-                            </div>
-                            <h3 class="dialog-title">Thêm thành công</h3>
-                            <p class="dialog-message">Món ăn của bạn đã được thêm vào giỏ hàng</p>
-                            <a href="../index.html" label for="cart-dialog" class="dialog-btn">Quay lại trang chủ</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <!-- Product Detail Section -->
+        <div class="product-detail">
+          <!-- Product Image -->
+          <div class="product-image-wrapper">
+            <div class="product-image-frame">
+              <img
+                src="../imagine/thit_luoc.png"
+                alt="Thịt luộc cà pháo mắm tôm"
+                class="product-image"
+              />
             </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-info">
+            <h2 class="product-name">Thịt luộc cà pháo mắm tôm</h2>
+            <p class="product-price">
+              Giá: <span class="price-amount">50.000đ</span>
+            </p>
+
+            <p class="product-description">
+              Thịt luộc mềm ngọt, chấm mắm tôm đậm đà, ăn kèm cà pháo giòn rum -
+              ngon tới mức muốn gọi thêm ngay
+            </p>
+
+            <!-- Quantity Selector -->
+            <div class="quantity-section">
+              <label class="quantity-label">Số lượng:</label>
+              <div class="quantity-control">
+                <button class="qty-btn minus" onclick="decreaseQty()">−</button>
+                <input
+                  type="number"
+                  class="qty-input"
+                  value="1"
+                  min="1"
+                  id="quantity"
+                />
+                <button class="qty-btn plus" onclick="increaseQty()">+</button>
+              </div>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <input type="checkbox" id="cart-dialog" class="dialog-toggle" />
+            <label for="cart-dialog" class="add-to-cart-btn"
+              >Thêm vào giỏ hàng</label
+            >
+
+            <!-- Success Dialog -->
+            <div class="dialog-overlay">
+              <div class="dialog-box">
+                <div class="dialog-icon">
+                  <svg viewBox="0 0 52 52" class="checkmark">
+                    <circle
+                      class="checkmark-circle"
+                      cx="26"
+                      cy="26"
+                      r="25"
+                      fill="none"
+                    />
+                    <path
+                      class="checkmark-check"
+                      fill="none"
+                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                    />
+                  </svg>
+                </div>
+                <h3 class="dialog-title">Thêm thành công</h3>
+                <p class="dialog-message">
+                  Món ăn của bạn đã được thêm vào giỏ hàng
+                </p>
+                <a
+                  href="../index.html"
+                  label
+                  for="cart-dialog"
+                  class="dialog-btn"
+                  >Quay lại trang chủ</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
-                    <div class="contact-info">
-                        <p class="contact-item">
-                            <img src="../imagine/Icon.png" alt="Địa chỉ">
-                            Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Phone.png" alt="Điện thoại">
-                            Hotline: 0912 913 914
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Instagram.png" alt="Instagram">
-                            comqua.cuangoai
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Facebook.png" alt="Facebook">
-                            Comquecuangoai
-                        </p>
-                    </div>
-                </div>
-                <div class="footer-map">
-                    <img src="../imagine/map.png" alt="Bản đồ vị trí">
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
+            <div class="contact-info">
+              <p class="contact-item">
+                <img src="../imagine/Icon.png" alt="Địa chỉ" />
+                Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Phone.png" alt="Điện thoại" />
+                Hotline: 0912 913 914
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Instagram.png" alt="Instagram" />
+                comqua.cuangoai
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Facebook.png" alt="Facebook" />
+                Comquecuangoai
+              </p>
             </div>
+          </div>
+          <div class="footer-map">
+            <img src="../imagine/map.png" alt="Bản đồ vị trí" />
+          </div>
         </div>
+      </div>
     </footer>
 
     <script>
-        function decreaseQty() {
-            const qtyInput = document.getElementById('quantity');
-            let currentValue = parseInt(qtyInput.value);
-            if (currentValue > 1) {
-                qtyInput.value = currentValue - 1;
-            }
+      function decreaseQty() {
+        const qtyInput = document.getElementById("quantity");
+        let currentValue = parseInt(qtyInput.value);
+        if (currentValue > 1) {
+          qtyInput.value = currentValue - 1;
         }
+      }
 
-        function increaseQty() {
-            const qtyInput = document.getElementById('quantity');
-            let currentValue = parseInt(qtyInput.value);
-            qtyInput.value = currentValue + 1;
-        }
+      function increaseQty() {
+        const qtyInput = document.getElementById("quantity");
+        let currentValue = parseInt(qtyInput.value);
+        qtyInput.value = currentValue + 1;
+      }
     </script>
-</body>
-
+  </body>
 </html>
-

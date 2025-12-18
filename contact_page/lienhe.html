@@ -1,146 +1,165 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liên hệ-Cơm Quê Của Ngoại">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Liên hệ-Cơm Quê Của Ngoại" />
     <title>Liên hệ - Cơm Quê Của Ngoại</title>
-    <link rel="stylesheet" href="lienhe.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="lienhe.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header & Navigation -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="kkk">
-                        <img src="../imagine/logo-web-cqcn.png" alt="Cơm Quê Của Ngoại Logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="../index.html">Trang chủ</a></li>
-                    <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="../menu_page/menu.html">Menu</a></li>
-                    <li><a href="../datban_page/datban.html">Đặt bàn</a></li>
-                    <li><a href="lienhe.html" class="active">Liên hệ</a></li>
-                </ul>
-                <div class="cart-icon">
-                    <a href="../Order_page/order.html">
-                        <img src="../imagine/shopping-cart.png" alt="Giỏ hàng">
-                    </a>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="kkk">
+              <img
+                src="../imagine/logo-web-cqcn.png"
+                alt="Cơm Quê Của Ngoại Logo"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../About_page/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="../menu_page/menu.html">Menu</a></li>
+            <li><a href="../datban_page/datban.html">Đặt bàn</a></li>
+            <li><a href="lienhe.html" class="active">Liên hệ</a></li>
+          </ul>
+          <div class="cart-icon">
+            <a href="../Order_page/order.html">
+              <img src="../imagine/shopping-cart.png" alt="Giỏ hàng" />
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <h1 class="contact-title">Liên hệ</h1>
-        </div>
+      <div class="container">
+        <h1 class="contact-title">Liên hệ</h1>
+      </div>
     </section>
 
     <!-- Main Content -->
     <main>
-        <section class="contact-section">
-            
-            <div class="contact-form-container">
-                <form id="contactForm" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="fullname">Họ và tên :</label>
-                            <input type="text" id="fullname" name="fullname" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Điện thoại :</label>
-                            <input type="tel" id="phone" name="phone" pattern="0[0-9]{9}" title="Số điện thoại phải có 10 số và bắt đầu bằng 0" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="address">Địa chỉ :</label>
-                            <input type="text" id="address" name="address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email :</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="subject">Tiêu đề :</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="message">Nội dung :</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Gửi</button>
-                </form>
+      <section class="contact-section">
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullname">Họ và tên :</label>
+                <input type="text" id="fullname" name="fullname" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Điện thoại :</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="0[0-9]{9}"
+                  title="Số điện thoại phải có 10 số và bắt đầu bằng 0"
+                  required
+                />
+              </div>
             </div>
-        </section>
 
-        <!-- Map Section -->
-        <section class="map-section">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2929347434437!2d105.78530431476358!3d20.98105999467432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad5569799e7b%3A0x7bbff10bf3e1a83a!2zMTAwQSBUcuG6p24gUGjDuiwgSMOgIMSQ4buTbmcsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1639000000000!5m2!1svi!2s" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                </iframe>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="address">Địa chỉ :</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+              </div>
             </div>
-        </section>
+
+            <div class="form-group full-width">
+              <label for="subject">Tiêu đề :</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Nội dung :</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Gửi</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2929347434437!2d105.78530431476358!3d20.98105999467432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad5569799e7b%3A0x7bbff10bf3e1a83a!2zMTAwQSBUcuG6p24gUGjDuiwgSMOgIMSQ4buTbmcsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1639000000000!5m2!1svi!2s"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
     </main>
 
     <!-- Success Dialog -->
     <div id="successDialog" class="dialog-overlay">
-        <div class="dialog-box">
-            <h2 class="dialog-title">Đã gửi ✓</h2>
-            <p class="dialog-message">Cảm ơn quý khách đã đóng góp ý kiến, chúng tôi sẽ phản hồi trong thời gian sớm nhất</p>
-            <button id="dialogOkBtn" class="dialog-btn">OK</button>
-        </div>
+      <div class="dialog-box">
+        <h2 class="dialog-title">Đã gửi ✓</h2>
+        <p class="dialog-message">
+          Cảm ơn quý khách đã đóng góp ý kiến, chúng tôi sẽ phản hồi trong thời
+          gian sớm nhất
+        </p>
+        <button id="dialogOkBtn" class="dialog-btn">OK</button>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
-                    <div class="contact-info">
-                        <p class="contact-item">
-                            <img src="../imagine/Icon.png" alt="Địa chỉ">
-                            Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Phone.png" alt="Điện thoại">
-                            Hotline: 0912 913 914
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Instagram.png" alt="Email">
-                            comqua.cuangoai
-                        </p>
-                        <p class="contact-item">
-                            <img src="../imagine/Facebook.png" alt="Website">
-                            Comquecuangoai
-                        </p>
-                    </div>
-                </div>
-
-                <div class="footer-map">
-                    <img src="../imagine/map.png" alt="Bản đồ vị trí">
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-title">Cơm quê của ngoại - Chuẩn vị cơm quê</h3>
+            <div class="contact-info">
+              <p class="contact-item">
+                <img src="../imagine/Icon.png" alt="Địa chỉ" />
+                Số 100A Trần Phù, phường Hà Đông, thành phố Hà Nội
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Phone.png" alt="Điện thoại" />
+                Hotline: 0912 913 914
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Instagram.png" alt="Email" />
+                comqua.cuangoai
+              </p>
+              <p class="contact-item">
+                <img src="../imagine/Facebook.png" alt="Website" />
+                Comquecuangoai
+              </p>
             </div>
+          </div>
+
+          <div class="footer-map">
+            <img src="../imagine/map.png" alt="Bản đồ vị trí" />
+          </div>
         </div>
+      </div>
     </footer>
-
-    <script src="lienhe.js"></script>
-</body>
+  </body>
 </html>
-
